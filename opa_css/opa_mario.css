@@ -32,6 +32,6 @@ body {
   background-color: var(--div-hover-color) !important;
 }
 
-.msg:hover {
+.msg, .msg::after, .msg::before {
   background-color: var(--div-hover-color) !important;
 }
