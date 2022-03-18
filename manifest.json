@@ -1,0 +1,18 @@
+{
+  "name": "Opa Mario",
+  "description": "Uma extensão de tema que modifica o visual da plataforma Opa! chat.",
+  "version": "0.1",
+  "manifest_version": 3,
+  "action": {
+    "default_icon": {
+      "16": "img/mario_flower_16.png",
+      "24": "img/mario_flower_24.png",
+      "32": "img/mario_flower_32.png",
+      "64": "img/mario_flower_64.png"
+    }
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ]
+}
