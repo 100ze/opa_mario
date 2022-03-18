@@ -1,0 +1,10 @@
+{
+  "name": "opa_mario",
+  "version": "0.0.1",
+  "description": "Uma extensão que adiciona temas ao Opa! Chat.",
+  "main": "manifest.json",
+  "repository": "https://github.com/100ze/opa_mario",
+  "author": "Wilton Ribeiro",
+  "license": "UNLICENSED",
+  "private": true
+}
