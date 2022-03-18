@@ -9,7 +9,9 @@
       "24": "img/mario_flower_24.png",
       "32": "img/mario_flower_32.png",
       "64": "img/mario_flower_64.png"
-    }
+    },
+    "default_title": "Clique para adicionar o tema",
+    "default_popup": "popup.html"
   },
   "permissions": [
     "activeTab",
