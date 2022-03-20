@@ -1,4 +1,7 @@
 
+# ignore todo files
+*.todo
+
 # ignore node_modules/
 node_modules/
 
