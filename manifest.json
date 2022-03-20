@@ -13,6 +13,10 @@
     "default_title": "Clique para adicionar o tema",
     "default_popup": "popup.html"
   },
+  "background": {
+    "service_worker": "./app/app.js",
+    "type": "module"
+  },
   "permissions": [
     "activeTab",
     "scripting"
