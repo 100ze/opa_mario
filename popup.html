@@ -29,6 +29,12 @@
 
     input {
       width: 100%;
+      border: none;
+      color: #005b00 !important;
+    }
+
+    input:focus {
+      outline: 6px solid #005b00;
     }
 
     button {
@@ -36,22 +42,51 @@
       min-width: 100px;
       margin: 0 auto;
       margin-top: 10px;
+      border: none;
+    }
+
+    button:focus {
+      outline: 6px solid #b72700;
     }
 
     p {
       font-style: italic;
     }
+
+    .mario-orange {
+      background: #f88700 !important;
+      color: white;
+    }
+
+    .mario-dark-orange {
+      background: #b72700 !important;
+      color: white;
+    }
+
+    .mario-green {
+      background: #00f800 !important;
+      color: white;
+    }
+
+    .mario-dark-green {
+      background: #005b00 !important;
+      color: white;
+    }
+
+    .mario-dark-orange-click:active {
+      background-color: #b72700 !important;
+    }
   </style>
 </head>
 
-<body class="w3-dark-grey w3-large">
+<body class="w3-indigo w3-large">
   <header class="w3-display-container w3-section">
     <img class="w3-display-middle" src="/img/mario_flower_128.png" alt="Flor do Mario">
   </header>
   <main>
     <section class="w3-container w3-display-container w3-section">
-      <input type="text">
-      <button class="w3-display-bottom" type="button">Salvar</button>
+      <input class="mario-green" type="text">
+      <button class="w3-display-bottom w3-button mario-orange mario-dark-orange-click" type="button">Salvar</button>
     </section>
     <section class="w3-section">
       <div class="w3-panel w3-red">Mario não conseguiu achar a imagem, verifique o link ou tente com outro</div>
