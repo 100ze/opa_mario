@@ -8,8 +8,14 @@
   <link href="node_modules/w3css/w3.css" rel="stylesheet">
 
   <style>
+    @font-face {
+      font-family: "press_start_2p";
+      src: url("fonts/press_start/PressStart2P-Regular.ttf");
+    }
+
     body {
       width: 300px;
+      font-family: "press_start_2p", sans-serif;
     }
 
     header {
@@ -27,7 +33,7 @@
 
     button {
       display: block;
-      width: 100px;
+      min-width: 100px;
       margin: 0 auto;
       margin-top: 10px;
     }
@@ -38,7 +44,7 @@
   </style>
 </head>
 
-<body class="w3-dark-grey w3-xlarge">
+<body class="w3-dark-grey w3-large">
   <header class="w3-display-container w3-section">
     <img class="w3-display-middle" src="/img/mario_flower_128.png" alt="Flor do Mario">
   </header>
@@ -51,7 +57,7 @@
       <div class="w3-panel w3-red">Mario não conseguiu achar a imagem, verifique o link ou tente com outro</div>
     </section>
   </main>
-  <footer class="w3-container w3-section w3-large">
+  <footer class="w3-container w3-section w3-medium">
     <p class="w3-center">Wilton Ribeiro &copy; POV industries</p>
   </footer>
 </body>
