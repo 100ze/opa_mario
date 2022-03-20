@@ -8,6 +8,10 @@
   <link href="node_modules/w3css/w3.css" rel="stylesheet">
 
   <style>
+    body {
+      width: 300px;
+    }
+
     header {
       width: 100%;
       height: 100px;
@@ -16,17 +20,28 @@
     img {
       max-width: 100px;
     }
+
+    input {
+      width: 100%;
+    }
+
+    button {
+      display: block;
+      width: 100px;
+      margin: 0 auto;
+      margin-top: 10px;
+    }
   </style>
 </head>
 
-<body class="w3-container w3-dark-grey">
+<body class="w3-dark-grey w3-xlarge">
   <header class="w3-display-container w3-section">
     <img class="w3-display-middle" src="/img/mario_flower_128.png" alt="Flor do Mario">
   </header>
   <main>
-    <section>
+    <section class="w3-container w3-display-container w3-section">
       <input type="text">
-      <button type="button">Salvar</button>
+      <button class="w3-display-bottom" type="button">Salvar</button>
     </section>
     <section>
       <div>Mario não conseguiu achar a imagem, verifique o link ou tente com outro</div>
