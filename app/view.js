@@ -2,8 +2,6 @@
 
 export default class View {
   constructor() {
-    this.input = document.querySelector("#input")
-    this.save_button = document.querySelector("#save_button")
     this.msg_panel = document.querySelector("#msg_panel")
   }
 
