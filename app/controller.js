@@ -18,6 +18,19 @@ export default class Controller {
       console.log(available)
 
       if (available) {
+        this.model.injectScript(
+          (url) => {
+            fetch(url)
+              .then(response => {
+                return response.blob()
+              })
+              .then(response_blob => {
+                const imageURL = URL.createObjectURL(response_blob)
+                document.querySelector("body").style.backgroundImage = "url(" + imageURL + ")"
+              })
+          },
+          [url]
+        )
         this.view.success()
       } else {
         this.view.failure()
