@@ -38,11 +38,12 @@ export default class Controller {
     return tab
   }
 
-  async injectScript(script) {
+  async injectScript(script, args) {
     const tab = await this._getCurrentTab()
-    chrome.scripting.executeScript({
+    await chrome.scripting.executeScript({
       target: { tabId: tab.id },
-      function: script
-    });
+      args: args,
+      func: script
+    })
   }
 }
