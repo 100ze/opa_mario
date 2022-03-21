@@ -26,4 +26,12 @@ export default class Model {
       func: script
     })
   }
+
+  async injectCSS(path) {
+    const tab = await this._getCurrentTab()
+    await chrome.scripting.insertCSS({
+      target: { tabId: tab.id },
+      files: [path]
+    })
+  }
 } 
