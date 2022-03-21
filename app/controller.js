@@ -31,4 +31,18 @@ export default class Controller {
   async init() {
     this.save_button.addEventListener("click", this._getImageController.bind(this))
   }
+
+  async _getCurrentTab() {
+    const queryOptions = { active: true, currentWindow: true }
+    const [tab] = await chrome.tabs.query(queryOptions)
+    return tab
+  }
+
+  async injectScript(script) {
+    const tab = await this._getCurrentTab()
+    chrome.scripting.executeScript({
+      target: { tabId: tab.id },
+      function: script
+    });
+  }
 }
