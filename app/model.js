@@ -10,5 +10,9 @@ export default class Model {
       .then(response_blob => {
         return response_blob ? URL.createObjectURL(response_blob) : false
       })
+      .catch(error => {
+        console.log(error)
+        return false
+      })
   }
 } 
