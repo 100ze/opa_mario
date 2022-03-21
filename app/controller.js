@@ -14,11 +14,10 @@ export default class Controller {
     const url = this.input.value
 
     if (url) {
-      const image = await this.model.getImage(url)
-      console.log(image)
-      console.log()
+      const available = await this.model.isImageAvailable(url)
+      console.log(available)
 
-      if (image) {
+      if (available) {
         this.view.success()
       } else {
         this.view.failure()
