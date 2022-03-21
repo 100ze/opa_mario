@@ -11,12 +11,18 @@ export default class Controller {
   }
 
   async _getImageController() {
-    const image = await this.model.getImage(this.input.value)
-    console.log(image)
-    console.log(this.input.value)
+    const url = this.input.value
 
-    if (image) {
-      this.view.success()
+    if (url) {
+      const image = await this.model.getImage(url)
+      console.log(image)
+      console.log()
+
+      if (image) {
+        this.view.success()
+      } else {
+        this.view.failure()
+      }
     } else {
       this.view.failure()
     }
