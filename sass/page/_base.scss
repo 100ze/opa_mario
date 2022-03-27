@@ -1,0 +1,21 @@
+
+$transparency: transparent !important;
+
+/* make all page elements transparent */
+div, span, label, i, button {
+  background: $transparency;
+  &::before {
+    background: $transparency;
+  }
+  &::after {
+    background: $transparency;
+  }
+}
+
+/* adjust background size and placement */
+body {
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}

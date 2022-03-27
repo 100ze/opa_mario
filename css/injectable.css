@@ -1,38 +1,21 @@
-/* opa_css/opa_mario.css */
-:root {
-  --div-hover-color: #17171c;
-  --text-color: #00FF00;
+/* sass/page/injectable.scss */
+/* make all page elements transparent */
+div, span, label, i, button {
+  background: transparent !important;
 }
-
-div {
+div::before, span::before, label::before, i::before, button::before {
+  background: transparent !important;
+}
+div::after, span::after, label::after, i::after, button::after {
   background: transparent !important;
 }
 
+/* adjust background size and placement */
 body {
   background-size: cover !important;
   background-attachment: fixed !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-}
-
-.dialog_panel, .list, .menu, .msg {
-  color: var(--text-color) !important;
-}
-
-.dialog_panel:hover {
-  background-color: var(--div-hover-color) !important;
-}
-
-.list:hover {
-  background-color: var(--div-hover-color) !important;
-}
-
-.menu:hover {
-  background-color: var(--div-hover-color) !important;
-}
-
-.msg, .msg::after, .msg::before {
-  background-color: var(--div-hover-color) !important;
 }
 
 /*# sourceMappingURL=opa_mario.css.map */
