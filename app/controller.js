@@ -32,7 +32,7 @@ export default class Controller {
           [url]
         )
 
-        this.model.injectCSS("opa_css/opa_mario.css")
+        this.model.injectCSS("css/injectable.css")
 
         this.view.success()
       } else {
