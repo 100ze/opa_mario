@@ -2,6 +2,9 @@
 # ignore todo files
 *.todo
 
+# ignore temporary text files
+*.ram
+
 # ignore node_modules/
 node_modules/
 
