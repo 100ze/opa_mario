@@ -1,4 +1,7 @@
-/* mario_css/mario.css */
+/* sass/extension/popup.scss */
+
+@import 'font';
+@import 'colors';
 
 body {
   width: 300px;
@@ -17,11 +20,11 @@ img {
 input {
   width: 100%;
   border: none;
-  color: var(--mario-dark-green) !important;
-}
+  color: $mario-dark-green !important;
 
-input:focus {
-  outline: 6px solid var(--mario-dark-green);
+  &:focus {
+    outline: 6px solid $mario-dark-green;
+  }
 }
 
 button {
@@ -30,10 +33,10 @@ button {
   margin: 0 auto;
   margin-top: 10px;
   border: none;
-}
 
-button:focus {
-  outline: 6px solid var(--mario-dark-orange);
+  &:hover{
+    outline: 6px solid $mario-dark-orange;
+  }
 }
 
 p {

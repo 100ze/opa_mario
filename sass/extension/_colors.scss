@@ -1,0 +1,31 @@
+/* sass/extension/_colors.scss */
+
+$mario-orange: #f88700;
+$mario-dark-orange: #b72700;
+$mario-green: #00f800;
+$mario-dark-green: #005b00;
+
+@mixin colors($background-color, $color: white){
+  background: $background-color !important;
+  color: $color;
+}
+
+.mario-orange {
+  @include colors($mario-orange)
+}
+
+.mario-dark-orange {
+  @include colors($mario-dark-orange)
+}
+
+.mario-green {
+  @include colors($mario-green)
+}
+
+.mario-dark-green {
+  @include colors($mario-dark-green)
+}
+
+.mario-dark-orange-click:active {
+  @include colors($mario-dark-orange)
+}

@@ -1,0 +1,71 @@
+/* sass/extension/popup.scss */
+/* sass/extension/_font.scss */
+@font-face {
+  font-family: "press_start_2p";
+  src: url("../../fonts/press_start/PressStart2P-Regular.ttf");
+}
+/* sass/extension/_colors.scss */
+.mario-orange {
+  background: #f88700 !important;
+  color: white;
+}
+
+.mario-dark-orange {
+  background: #b72700 !important;
+  color: white;
+}
+
+.mario-green {
+  background: #00f800 !important;
+  color: white;
+}
+
+.mario-dark-green {
+  background: #005b00 !important;
+  color: white;
+}
+
+.mario-dark-orange-click:active {
+  background: #b72700 !important;
+  color: white;
+}
+
+body {
+  width: 300px;
+  font-family: "press_start_2p", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+}
+
+img {
+  max-width: 100px;
+}
+
+input {
+  width: 100%;
+  border: none;
+  color: #005b00 !important;
+}
+input:focus {
+  outline: 6px solid #005b00;
+}
+
+button {
+  display: block;
+  min-width: 100px;
+  margin: 0 auto;
+  margin-top: 10px;
+  border: none;
+}
+button:hover {
+  outline: 6px solid #b72700;
+}
+
+p {
+  font-style: italic;
+}
+
+/*# sourceMappingURL=popup.css.map */
