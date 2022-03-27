@@ -1,4 +1,5 @@
 /* opa_css/opa_mario.css */
+
 :root {
   --div-hover-color: #17171c;
   --text-color: #00FF00;
@@ -34,5 +35,3 @@ body {
 .msg, .msg::after, .msg::before {
   background-color: var(--div-hover-color) !important;
 }
-
-/*# sourceMappingURL=opa_mario.css.map */
