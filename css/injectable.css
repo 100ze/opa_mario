@@ -19,6 +19,27 @@ body {
   background-position: center !important;
 }
 
-/*# sourceMappingURL=opa_mario.css.map */
+/* change font color and add hover effect */
+.dialog_panel {
+  padding-top: 15px;
+  color: #00FF00;
+  /* remove useless avatar */
+  /* add border and change button text color */
+}
+.dialog_panel:hover {
+  background-color: #17171c !important;
+}
+.dialog_panel .foto {
+  display: none;
+}
+.dialog_panel button, .dialog_panel .departamento {
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  /* hover effect */
+}
+.dialog_panel button:hover, .dialog_panel .departamento:hover {
+  background-color: #FFFFFF !important;
+  color: transparent !important;
+}
 
 /*# sourceMappingURL=injectable.css.map */

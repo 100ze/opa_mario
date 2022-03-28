@@ -1,0 +1,28 @@
+
+/* change font color and add hover effect */
+.dialog_panel {
+  padding-top: 15px;
+  color: $secundary-color;
+
+  &:hover {
+    background-color: $primary-color !important;
+  }
+
+  /* remove useless avatar */
+  .foto {
+    display: none;
+  }
+
+  /* add border and change button text color */
+  button, .departamento {
+    color: $terciary-color;
+    border: 2px solid $terciary-color;
+
+    /* hover effect */
+    &:hover {
+      background-color: $terciary-color !important;
+      color: transparent !important;
+    }
+  }
+}
+
