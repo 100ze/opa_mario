@@ -1,4 +1,5 @@
 /* sass/page/injectable.scss */
+/* set main colors */
 /* make all page elements transparent */
 div, span, label, i, button, input {
   background: transparent !important;
