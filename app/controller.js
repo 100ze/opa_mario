@@ -1,6 +1,7 @@
 // app/controller.js
 import Model from "./model.js"
 import View from "./view.js"
+import removeStyles from "./remove_styles.js"
 
 export default class Controller {
   constructor() {
@@ -33,6 +34,7 @@ export default class Controller {
         )
 
         this.model.injectCSS("css/injectable.css")
+        removeStyles()
 
         this.view.success()
       } else {
