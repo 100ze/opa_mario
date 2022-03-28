@@ -2,7 +2,7 @@
 $transparency: transparent !important;
 
 /* make all page elements transparent */
-div, span, label, i, button {
+div, span, label, i, button, input{
   background: $transparency;
   &::before {
     background: $transparency;

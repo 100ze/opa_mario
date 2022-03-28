@@ -1,12 +1,12 @@
 /* sass/page/injectable.scss */
 /* make all page elements transparent */
-div, span, label, i, button {
+div, span, label, i, button, input {
   background: transparent !important;
 }
-div::before, span::before, label::before, i::before, button::before {
+div::before, span::before, label::before, i::before, button::before, input::before {
   background: transparent !important;
 }
-div::after, span::after, label::after, i::after, button::after {
+div::after, span::after, label::after, i::after, button::after, input::after {
   background: transparent !important;
 }
 
